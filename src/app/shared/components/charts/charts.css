@@ -1,0 +1,15 @@
+.chart-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chart-container {
+  width: 70vw;   /* 50% del ancho de la pantalla */
+  height: 60vh;  /* 30% de la altura de la pantalla */
+}
+
+.chart-container canvas {
+  width: 100% !important;   /* Hace que el canvas se adapte al contenedor */
+  height: 100% !important;
+}
