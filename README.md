@@ -1,101 +1,123 @@
 # BusinessDashboard
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.1.6.
+BusinessDashboard is a personal finance dashboard built with [Angular CLI](https://github.com/angular/angular-cli) (v20.1.6) to help you track your income and expenses by customizable categories. It provides clear visualizations and reports to support your financial decision-making.
 
-## Development server
+---
 
-To start a local development server, run:
+## Table of Contents
 
+- [Features](#features)
+- [Getting Started](#getting-started)
+  - [Installation](#installation)
+  - [Development Server](#development-server)
+  - [Usage](#usage)
+- [Code Scaffolding](#code-scaffolding)
+- [Building](#building)
+- [Testing](#testing)
+  - [Unit Tests](#unit-tests)
+  - [End-to-End Tests](#end-to-end-tests)
+- [Contributing](#contributing)
+- [License](#license)
+- [Additional Resources](#additional-resources)
+
+---
+
+## Features
+
+- Track personal income and expenses
+- Customizable category classification
+- Visual reports and charts
+- Intuitive and user-friendly interface
+
+---
+
+## Getting Started
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/tu-usuario/business-dashboard.git
+   cd business-dashboard
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+### Development Server
+
+Start the local development server:
 ```bash
 ng serve
 ```
+Navigate to [http://localhost:4200/](http://localhost:4200/). The app reloads automatically on source file changes.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+### Usage
 
-## Code scaffolding
+To start the project in development mode:
+```bash
+npm start
+```
+This will open the application in your default browser.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+---
 
+## Code Scaffolding
+
+Generate a new component:
 ```bash
 ng generate component component-name
 ```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
+For a full list of schematics (components, directives, pipes, etc.):
 ```bash
 ng generate --help
 ```
 
+---
+
 ## Building
 
-To build the project run:
-
+Build the project for production:
 ```bash
 ng build
 ```
+The build artifacts will be stored in the `dist/` directory.
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+---
 
-## Running unit tests
+## Testing
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+### Unit Tests
 
+Run unit tests with [Karma](https://karma-runner.github.io):
 ```bash
 ng test
 ```
 
-## Running end-to-end tests
+### End-to-End Tests
 
-For end-to-end (e2e) testing, run:
-
+Run end-to-end (e2e) tests:
 ```bash
 ng e2e
 ```
+> Note: Angular CLI does not include an e2e framework by default. Choose one that fits your needs.
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+---
+
+## Contributing
+
+Contributions are welcome! Please open an issue or pull request for suggestions or improvements.
+
+---
+
+## License
+
+This project is licensed under the MIT License.
+
+---
 
 ## Additional Resources
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+For more information on Angular CLI, see the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli). BusinessDashboard
 
-
-# Dashboard de Finanzas Personales
-
-Este proyecto es un **dashboard** diseñado para llevar el control de ingresos y egresos personales por categoría, facilitando la gestión de tus finanzas. Permite visualizar de manera clara y ordenada las transacciones, ayudando en la toma de decisiones y el análisis de tus gastos e ingresos.
-
-## Características
-
-- Registro de ingresos y egresos personales.
-- Clasificación por categorías personalizables.
-- Visualización de reportes y gráficos.
-- Interfaz intuitiva y fácil de usar.
-
-## Instalación
-
-1. Clona el repositorio en tu máquina local:
-  ```bash
-  git clone https://github.com/tu-usuario/business-dashboard.git
-  cd business-dashboard
-  ```
-
-2. Instala las dependencias necesarias:
-  ```bash
-  npm install
-  ```
-
-## Uso
-
-Para iniciar el proyecto en modo desarrollo, ejecuta:
-```bash
-npm start
-```
-
-Esto abrirá la aplicación en tu navegador predeterminado.
-
-## Contribuciones
-
-Las contribuciones son bienvenidas. Por favor, abre un issue o un pull request para sugerencias o mejoras.
-
-## Licencia
-
-Este proyecto está bajo la licencia MIT.
