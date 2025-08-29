@@ -57,3 +57,45 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+
+# Dashboard de Finanzas Personales
+
+Este proyecto es un **dashboard** diseñado para llevar el control de ingresos y egresos personales por categoría, facilitando la gestión de tus finanzas. Permite visualizar de manera clara y ordenada las transacciones, ayudando en la toma de decisiones y el análisis de tus gastos e ingresos.
+
+## Características
+
+- Registro de ingresos y egresos personales.
+- Clasificación por categorías personalizables.
+- Visualización de reportes y gráficos.
+- Interfaz intuitiva y fácil de usar.
+
+## Instalación
+
+1. Clona el repositorio en tu máquina local:
+  ```bash
+  git clone https://github.com/tu-usuario/business-dashboard.git
+  cd business-dashboard
+  ```
+
+2. Instala las dependencias necesarias:
+  ```bash
+  npm install
+  ```
+
+## Uso
+
+Para iniciar el proyecto en modo desarrollo, ejecuta:
+```bash
+npm start
+```
+
+Esto abrirá la aplicación en tu navegador predeterminado.
+
+## Contribuciones
+
+Las contribuciones son bienvenidas. Por favor, abre un issue o un pull request para sugerencias o mejoras.
+
+## Licencia
+
+Este proyecto está bajo la licencia MIT.
