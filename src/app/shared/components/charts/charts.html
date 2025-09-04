@@ -1,12 +1,34 @@
-<div class="chart-wrapper">
-  <div class="chart-container">
-    <canvas id="lineChart"></canvas>
+<div class="flex flex-wrap gap-4 p-4">
+  <!-- Gráfico de línea -->
+  <div class="flex-1 min-w-[300px] h-64 relative cursor-pointer" (dblclick)="expandChart('line')">
+    <h3 class="text-center font-semibold mb-2">Ingresos vs Egresos</h3>
+    <div class="bg-white/50 backdrop-blur-sm rounded-xl shadow-lg p-4 h-full flex flex-col">
+      <canvas id="lineChart" class="h-full w-full"></canvas>
+    </div>
+  </div>
+
+  <!-- Gráfico de dona -->
+  <div
+    class="flex-1 min-w-[300px] h-64 relative cursor-pointer"
+    (dblclick)="expandChart('doughnut')"
+  >
+    <h3 class="text-center font-semibold mb-2">Gastos por Categoría</h3>
+    <div class="bg-white/50 backdrop-blur-sm rounded-xl shadow-lg p-4 h-full flex flex-col">
+      <canvas id="doughnutChart" class="h-full w-full"></canvas>
+    </div>
   </div>
 </div>
 
-
-
-<div class="chart-container">
-  <!-- Gráfico de dona -->
-  <canvas id="doughnutChart"></canvas>
+<!-- Modal para gráfico expandido -->
+<div
+  id="chartModal"
+  class="fixed inset-0 bg-black/50 backdrop-blur-sm hidden z-50 items-center justify-center p-4"
+>
+    <h3 class="text-center font-semibold p-2">Gráfico Expandido</h3>
+  <div class="bg-white rounded-xl shadow-xl relative w-full max-w-5xl h-[80vh]">
+    <button class="absolute top-2 right-2 text-gray-700 hover:text-gray-900" (click)="closeModal()">
+      ✕
+    </button>
+    <canvas #expandedChart class="h-full w-full"></canvas>
+  </div>
 </div>

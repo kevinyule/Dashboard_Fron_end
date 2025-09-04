@@ -1,20 +1,30 @@
-
-<div class="min-h-screen bg-gray-50/50">
+<div class="min-h-screen bg-gradient-to-b from-indigo-50 via-purple-50 to-pink-50 relative overflow-hidden">
+  <!-- Sidebar -->
   <app-sidebar></app-sidebar>
 
-  <div class="p-4 xl:ml-80">
-    <nav class="block w-full max-w-full bg-transparent text-white shadow-none rounded-xl transition-all px-0 py-1">
+  <!-- Contenido principal -->
+  <div class="p-4 xl:ml-80 pt-24 pb-24">
+    <!-- Header fijo -->
+    <nav class="fixed top-0 left-0 xl:left-80 w-full xl:w-[calc(100%-18rem)] bg-white/50 backdrop-blur-md rounded-b-xl shadow-lg transition-all px-4 py-3 z-50">
       <app-header></app-header>
-
     </nav>
-    <div class="mt-12">
-      <router-outlet></router-outlet>
 
+    <!-- Contenido -->
+    <div class="mt-6">
+      <div class="bg-white/50 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-white/20 min-h-[calc(100vh-6rem)]">
+        <router-outlet></router-outlet>
+      </div>
     </div>
-    <div class="text-blue-gray-600">
-      <app-footer></app-footer>
 
+    <!-- Footer fijo -->
+    <div class="fixed bottom-0 left-0 xl:left-80 w-full xl:w-[calc(100%-18rem)] bg-white/50 backdrop-blur-md shadow-t-md rounded-t-xl z-50">
+      <app-footer></app-footer>
     </div>
   </div>
-</div>
 
+  <!-- Decoración de fondo -->
+  <div class="absolute top-0 left-0 w-full h-full pointer-events-none overflow-hidden">
+    <div class="absolute -top-40 -left-40 w-96 h-96 bg-gradient-to-tr from-purple-200/40 via-pink-200/20 to-indigo-200/10 rounded-full blur-3xl"></div>
+    <div class="absolute -bottom-40 -right-40 w-96 h-96 bg-gradient-to-tr from-indigo-300/30 via-purple-300/20 to-pink-200/10 rounded-full blur-3xl"></div>
+  </div>
+</div>
